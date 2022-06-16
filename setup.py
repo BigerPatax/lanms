@@ -24,8 +24,8 @@ class BinaryDistribution(Distribution):
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
-if subprocess.call(['make', '--always-make','-C', BASE_DIR]) != 0:
-    raise RuntimeError('Cannot compile lanms in the directory: {}'.format(BASE_DIR))
+# if subprocess.call(['make', '--always-make','-C', BASE_DIR]) != 0:
+#     raise RuntimeError('Cannot compile lanms in the directory: {}'.format(BASE_DIR))
 
 setuptools.setup(
     name='lanms',
